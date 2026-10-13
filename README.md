@@ -1,3 +1,4 @@
+<!-- CANARIO RVCQ0960 | nacido 2026-10-13 | repo OmarAbdielAlvarado/comi-colima -->
 # COMI-COLIMA 🤖🇲🇽
 *Reparto con robots en Colima — antes conocido como "Doña Chávez"*
 
