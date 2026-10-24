@@ -5,7 +5,7 @@ from rclpy.node import Node
 from std_msgs.msg import String
 class Voz(Node):
     def __init__(self):
-        super().__init__('voz_comicolima')
+        super().__init__('voz_ntfy')
         self.create_subscription(String,'pedido',self.envia,10)
     def envia(self,m):
         self.get_logger().info(f"-> ntfy: {m.data}")

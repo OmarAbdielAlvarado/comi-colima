@@ -9,3 +9,5 @@ __pycache__/
 *.log
 nodos/*.wav
 ESTADO_CERO.md
+*.mp4
+video/

@@ -1,0 +1,10 @@
+[Unit]
+Description=RPLidar A1 driver
+After=network.target
+[Service]
+User=omar
+ExecStart=/opt/ros/lyrical/lib/urg_node/urg_node_driver --ros-args -p serial_port:=/dev/ttyACM0
+Restart=always
+RestartSec=3
+[Install]
+WantedBy=multi-user.target

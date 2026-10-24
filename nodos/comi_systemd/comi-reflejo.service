@@ -1,0 +1,12 @@
+[Unit]
+Description=COMI reflejo autonomo (nodo_comi_autonomo.py)
+After=comi-lidar.service
+Requires=comi-lidar.service
+[Service]
+User=omar
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /home/omar/proyectos/comi_colima/nodos/nodo_comi_autonomo.py
+Restart=always
+RestartSec=3
+[Install]
+WantedBy=multi-user.target

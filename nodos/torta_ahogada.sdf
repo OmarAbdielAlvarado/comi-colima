@@ -12,6 +12,13 @@
       <lidar><scan><horizontal><samples>360</samples><resolution>1</resolution><min_angle>-3.1416</min_angle><max_angle>3.1416</max_angle></horizontal></scan><range><min>0.12</min><max>12.0</max><resolution>0.01</resolution></range></lidar>
       <always_on>1</always_on><visualize>false</visualize>
     </sensor>
+    <sensor name="cam9" type="camera">
+      <pose>0 0 0.20 0 0 0</pose>
+      <topic>/torta_cam_ojo9</topic>
+      <update_rate>10</update_rate>
+      <camera><horizontal_fov>1.2</horizontal_fov><image><width>320</width><height>240</height><format>RGB_INT8</format></image><clip><near>0.05</near><far>20</far></clip></camera>
+      <always_on>1</always_on><visualize>false</visualize>
+    </sensor>
   </link>
   <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl"/>
 </model>
